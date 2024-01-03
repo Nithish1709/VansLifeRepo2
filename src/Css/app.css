@@ -1,0 +1,208 @@
+
+
+*{
+    text-decoration: none;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+body{
+    background-color: rgba(245, 222, 179, 0.989);
+}
+
+.body{
+    overflow: auto;
+    height: 100vh;
+    display: flex;
+    /* grid-template-rows: 0.1fr 0.8fr 0.1fr; */
+    flex-direction:column ;
+    /* width: 100%; */
+    /* border:2px solid brown; */
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding:1rem ;
+  /* border:2px solid red; */
+  flex:0.1 0.2 0;
+}
+.home--btn{
+    /* border:2px solid skyblue; */
+    flex:0.2 0.2 0;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+.head--aside{
+    /* border:2px solid red; */
+    flex:0.8 0.8 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    &>*{
+        /* border: 2px solid black; */
+        flex:0 1 150px;
+        font-size: 1.2rem;
+        color:rgba(35, 35, 35, 0.985);
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+
+.home--page{
+    background-image: url("../assets/images/home-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:2rem;
+    flex:0.8 0 0;
+    display: flex;
+    flex-direction: column;
+    &>p,h1{
+        color:white;
+        width: max(45vw,500px);
+            
+    }
+}
+
+.homepage--btn{
+    background-color: orange;
+    border-radius: 10px;
+    color:white;
+    display: inline-flex;
+    align-self: center;
+    width: max(200px,18vw);
+    height: max(40px,30px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.952);
+    color:white;
+    display: grid;
+    place-content: center; 
+    flex:0.1 0 0;  
+}
+
+.host-container{
+    flex:0.8 1 0;
+}
+
+
+.host--navigation{
+    width: max(40vw,400px);
+    display: flex;
+    justify-content: space-around;    
+}
+
+.vans--card{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    height: max(150px,5vh);
+    width: max(250px,25vw);
+    padding: 20px;
+    gap:20px;
+    
+}
+
+.vans--card--contet{
+    align-self: center;
+}
+.vans-card-container{
+    /* border: 2px solid rgb(0, 255, 0); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,28vw));
+    grid-gap:20px;
+    padding: 20px;
+   
+    /* margin-block-start: 50px; */
+}
+
+
+.filter--button{
+    /* border:2px solid red; */
+    display: flex;
+    gap:2.5rem;
+    width: max-content;
+    padding:5px;
+}
+
+.filter--button>*{
+    border: none;
+    background-color:lightcoral;
+    color:white;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+}
+
+
+.vans--container{
+    /* border:2px solid yellow; */
+    flex:0.8 1 0;
+    padding:1.5rem;
+}
+
+.van-details{
+    /* border: 2px solid violet; */
+    flex:0.8 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;   
+}
+
+.van-details-aside{
+    display: flex; 
+    gap:2rem;
+}
+.aside-content{
+    flex: 0.3 1 0;
+    padding: 5px;
+    align-self: end;
+}
+
+.type-btn{
+    background-color: orange;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+}
+
+.van-details-content{
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    &>button{
+        background-color: cornflowerblue;
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
