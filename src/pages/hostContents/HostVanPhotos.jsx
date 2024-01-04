@@ -7,8 +7,8 @@ export default function HostVanPhotos(){
     const {vansData} = useOutletContext()
 
     return (
-        <div>
-            <img src={vansData.imageUrl} alt=""  width="250"/>
+        <div className="vans-details-info">
+            <img src={vansData.imageUrl} alt=""  width="150"/>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export default function Host(){
     return(
 
-        <div className="host-container">
+        <div className="host-container main-content">
             <HostLayout />
             <Outlet />
         </div>

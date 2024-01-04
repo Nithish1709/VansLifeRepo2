@@ -1,0 +1,175 @@
+
+root{
+    --size : 1rem
+}
+
+
+*{
+    /* border:2px solid sandybrown */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+
+    /* background-color: rgb(233, 169, 113); */
+    background-color:#0E0E10 ;
+    color:	hsl(0, 0%, 96%);
+   
+    /* overflow: auto; */
+   
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+body{
+
+    margin: 0px;
+   
+    
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+    
+}
+
+
+header{
+    flex:0 1 10vh;
+    padding:0px 10px;
+    gap: 20px;
+    /* border-bottom:2px solid white; */
+    
+
+    display: flex;
+    align-items: center;
+    
+    font-size: 1rem;
+
+    &>.aside{
+        margin-left: auto;
+    }
+    &>a{
+        color:white;
+        flex: 0 1 10vw;
+        text-decoration: none;
+    }
+}
+
+.main-content{  
+    flex:0 1 80vh;
+}
+footer{
+    flex: 0 1 10vh;
+    display: grid;
+    place-content: center;
+    /* border-top:2px solid white; */
+}
+
+.home--page{
+    background-image: url("../assets/images/home-hero.png");
+    display: grid;
+    place-content: center;
+
+    &>*{
+      margin:5px;
+      text-align: center;
+    }
+    &>a{
+        text-decoration: none;
+        width: max-content;
+        justify-self: center;
+        padding: 7px;
+        border-radius: 7px;
+        color: white;
+        background-color: sandybrown;
+        box-shadow: 1px 1px 2px 2px rgb(62, 62, 62);;
+    }
+}
+
+.host-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;    
+}
+
+.host--navigation{
+    flex:0 1 40px;
+    display: flex;
+    align-items: center;
+    gap:max(5vw,10px);
+    padding-left:10px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 5px;
+    &>a{
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+    &>button{
+      border:none;
+      background-color: transparent;
+      color:white; 
+      font-size: 0.8rem; 
+    }
+    
+}
+.vans-card-container{
+    flex:0 1 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows:140px ;
+    gap: 15px 15px;
+    padding: 10px;
+}
+.vans--card{
+    background-color: rgb(62, 62, 62);;
+    border-radius: 10px;
+    padding:3%;
+    height: 120px;
+
+    display: flex;
+    gap:3%;
+    font-size: 0.8rem;
+    color:white;
+    text-decoration: none; 
+}
+.vans--card--content{
+    align-self:start;
+    padding:10px;
+}
+
+.van-details{
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    padding:5px;
+    font-size: 0.8rem;
+}
+
+.buttons{
+  
+    display: flex;
+    gap:20px;
+    padding:5px;
+    &>a{
+        display: grid;
+        flex:0 1 55px;
+        background-color:rgb(62, 62, 62);
+        place-content: center;
+        border-radius: 5px;
+    }
+} 
+
+.vans-details-info{
+    padding:10px;
+}
+
+.detail-img{
+    width:min(500px,98%);
+}

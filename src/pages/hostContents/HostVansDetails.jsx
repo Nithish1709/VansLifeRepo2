@@ -14,11 +14,11 @@ export default function HostVansDetails(){
 
     return (
         <div className="van-details">
-            <NavLink to=".." relative="path" style={{textDecoration:"underline"}}>Back to all Vans</NavLink>
-            <img src={vansData.imageUrl} alt="vans detail imge" width="250px"/>
+            <NavLink to=".." relative="path" style={{textDecoration:"underline", color:"white"}}>Back to all Vans</NavLink>
+            <img src={vansData.imageUrl} alt="vans detail imge" className="detail-img"/>
             <div className="van-details-aside">
-                <h1>{vansData.name}</h1>
-                <div>{vansData.price}</div>
+                <h4 style={{margin:"0px"}}>{vansData.name}</h4>
+                <div>{vansData.price}/day</div>
             </div>
             <div className="van-details-content">
                 <div className="buttons">

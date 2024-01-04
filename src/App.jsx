@@ -16,7 +16,7 @@ import HostVanInfo from "./pages/hostContents/HostVanInfo.jsx";
 import HostVanPrice from "./pages/hostContents/HostVanPrice.jsx"
 import HostVansPhotos from "./pages/hostContents/HostVanPhotos.jsx"
 
-import "./Css/app.css"
+import "./Css/index.css"
 
 
 export default function App(){

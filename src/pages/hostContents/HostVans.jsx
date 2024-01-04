@@ -13,7 +13,7 @@ export default function HostVans(){
 
 
     return (
-        <div className="vans-card-container">
+        <div className="vans-card-container main-content">
            {cardElements}
         </div>
     )

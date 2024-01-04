@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Income(){
     return (
-        <div>
+        <div className="host-content">
             income goes here
         </div>
     )

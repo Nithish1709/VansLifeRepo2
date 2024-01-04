@@ -29,11 +29,11 @@ export default function Vans(){
                         }}
                         className="vans--card">
 
-                        <img src={ele.imageUrl} alt="vans image" width="150px"/>
-                        <div>
-                            <h3>{ele.name}</h3>
-                            <h6>{ele.price}/day</h6>
-                            <p>{ele.type}</p>
+                        <img src={ele.imageUrl} alt="vans image" width="100px" style={{borderRadius:"5px"}}/>
+                        <div className="vans--card--content">
+                            <div>{ele.name}</div>
+                            <div>{ele.price}/day</div>
+                            <div>{ele.type}</div>
                         </div>
                     </NavLink>
 
@@ -55,10 +55,9 @@ export default function Vans(){
     }
 
     return(
-        <div className="vans--container">
-            
-            <div>Explore our van options</div>
-            <div className="filter--button">
+        <div className="main-content host-container">
+        
+            <div className="filter--button host--navigation">
 
                 <button 
                 onClick={()=>{
@@ -76,8 +75,9 @@ export default function Vans(){
                 <button
                 onClick={()=>{
                     handleFilterChange("type", null)
-                }}>clear filter</button>
-
+                }}>
+                    clear filter
+                </button>
             </div>
             <div className="vans-card-container">
                 {vansElement}

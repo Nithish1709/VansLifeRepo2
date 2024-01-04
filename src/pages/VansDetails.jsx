@@ -23,8 +23,10 @@ export default function VansDetails(){
     }
 
     const buttonStyle ={
-        backgroundColor:"orange",
+        backgroundColor:"rgb(62, 62, 62)",
+        color:"white",
         border:"none",
+        borderRadius:"3px",
     }
 
     return (
@@ -32,7 +34,7 @@ export default function VansDetails(){
             <NavLink to={`..${search}`} relative="path" style={linkstyle} className="back-btn">Back to {type} vans</NavLink>
             <div className="van-details-aside">
                 <div className="image-container">
-                    <img src={vanElements.imageUrl} alt="vans image" width="350px"/>
+                    <img src={vanElements.imageUrl} alt="vans image" className="detail-img"/>
                 </div>
                 <div className="aside-content">
                     <h1>{vanElements.name}</h1>
@@ -43,7 +45,7 @@ export default function VansDetails(){
             </div>
             <div className="van-details-content">
                 <p>{vanElements.description}</p>
-                <button>Rent this van</button>
+                <button style={buttonStyle}>Rent this van</button>
             </div>
 
         </div>
