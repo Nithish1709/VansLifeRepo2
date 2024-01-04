@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 export default function HostLayout(){
 
     const activeStyles ={
-        textDecoration: "underline",
-        fontWeight:"bold"
+        fontWeight:"bold",
+        backgroundColor:"#2c2c87",
     }
 
 
