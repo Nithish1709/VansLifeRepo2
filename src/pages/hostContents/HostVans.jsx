@@ -8,7 +8,7 @@ export default function HostVans(){
    const [vansData, setVansData] = React.useState(data);
    const cardElements = vansData.map((ele)=>{
     return (
-        <VansCard data={ele} />)
+        <VansCard key={ele.id} data={ele} />)
    })
 
 

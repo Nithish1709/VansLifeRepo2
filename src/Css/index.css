@@ -1,7 +1,4 @@
 
-root{
-    --size : 1rem
-}
 
 
 *{
@@ -28,8 +25,7 @@ a{
 body{
 
     margin: 0px;
-   
-    
+    width: 100%;
 }
 .body{
     display: flex;
@@ -42,37 +38,38 @@ body{
 
 header{
     flex:0 1 10vh;
-    padding:0px 20px;
-    gap: 20px;
+    padding:0px 10px;
+    gap: 15px;
     /* border-bottom:2px solid white; */
     
 
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.7rem;
 
     &>.aside{
         margin-left: auto;
     }
     &>a{
         color:white;
-        flex: 0 1 10vw;
+        flex: 0 1 8vw;
         text-decoration: none;
-        
+                
         display: grid;
         place-content: center;
-        border-radius: 5px;
-    
+        border-radius: 3px;
     }
 }
 
 .main-content{  
     flex:0 1 80vh;
+    width: 100vw;
 }
 footer{
     flex: 0 1 10vh;
     display: grid;
     place-content: center;
+    background-color: rgb(52, 52, 52, 0.5);
     /* border-top:2px solid white; */
 }
 
@@ -111,9 +108,8 @@ footer{
     gap:max(5vw,10px);
     padding-left:10px;
     background-color: rgb(62, 62, 62);
-    border-radius: 5px;
     &>a{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-decoration: none;
         flex:0 1 6vw;
         display: grid;
@@ -173,10 +169,11 @@ footer{
 }
 
 .buttons{
-  
+
     display: flex;
     gap:20px;
     padding:5px;
+    font-size: 0.7rem;
     &>a{
         display: grid;
         flex:0 1 55px;
@@ -193,3 +190,17 @@ footer{
 .detail-img{
     width:min(500px,98%);
 }
+
+
+.login--container{
+    border:2px solid red;
+}
+
+.login-content{
+    border:2px solid slateblue;
+    display: grid;
+    place-content: center;
+    width: min(100vw, 600px);
+}
+
+    

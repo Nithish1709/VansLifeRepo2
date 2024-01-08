@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import data from "../assets/data.js"
-import { NavLink, useSearchParams } from "react-router-dom";
+import { NavLink, useLoaderData, useSearchParams } from "react-router-dom";
+
+
+export function loader(){
+    return data;
+}
+
+
+
+
 
 export default function Vans(){
 
@@ -8,11 +17,15 @@ export default function Vans(){
     
     const filterType = searchParams.get("type");
     
-    const vansToDisplay = filterType ? data.filter((ele)=>{
+    const vansData = useLoaderData()
+   
+
+
+    const vansToDisplay = filterType ? vansData.filter((ele)=>{
         if(ele.type === filterType){
             return true
         }
-    }):data
+    }):vansData
     
    
 
